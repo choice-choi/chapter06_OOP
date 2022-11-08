@@ -11,13 +11,10 @@ public class RectMain {
 		// 2. init 입력
 		// 3. info하여 출력
 
-
-				Rect rect = new Rect();
+		Rect rect = new Rect();
 				
-				rect.init();
-				rect.info();
-				
-		
+		rect.init();
+		rect.info();
 	}
 
 }

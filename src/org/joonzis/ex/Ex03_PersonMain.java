@@ -21,14 +21,13 @@ class Person{
 
 public class Ex03_PersonMain {
 	public static void main(String[] args) {
-		
 	
-		
 			// 위 Person 클래스 객체를 생성하여 정보 출력
 			Person woman = new Person();
+			//메인 메소드에서 생성된 객체를 통해 Person 클래스에 있는 선언한 필드들을 메인 메소드에서 값을 저장
 			woman.gender = '여';			
 			//gender는 보통 String인데 왜 Char로 받는지? 오류메세지:(Type mismatch: cannot convert from String to char) 
-			// -> 상위 필드에서 gender를 String이 아닌 char로 받았기 때문이다.
+			// -> 상위 필드에서 gender를 String 타입이 아닌 char로 받았기 때문이다.
 			woman.age = 25;
 			woman.height = 170;
 			woman.name = "최현아";
@@ -41,7 +40,7 @@ public class Ex03_PersonMain {
 			man.gender = '남';
 			man.age = 16;
 			man.height = 180;
-			man.name = "최현우";
+			man.name = "최은우";
 			man.info();
 			//위 정보와 똑같이 생겼지만 저장공간이 다름, 새로 클래스가 생김
 			// 한 파일에서 클래스 두개 생성 됨
